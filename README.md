@@ -18,9 +18,10 @@ O **RastreaDor** permite registrar episódios de dor com data, localização, in
 
 ## Visuais
 
-*(Espaço reservado para capturas de tela da interface.)*
+<p align="center">
+  <img src="https://i.imgur.com/wIZCdJH.gif" alt="Demo do RastreaDor" width="700">
+</p>
 
----
 
 ## Instalação
 
