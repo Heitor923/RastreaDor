@@ -10,7 +10,7 @@
 
 ## 📌 Sobre o Projeto
 
-O **RastreaDor** é uma aplicação desktop desenvolvida como parte da disciplina de Construção de Software, com foco em boas práticas de desenvolvimento, testes automatizados e integração contínua.
+O **RastreaDor** é uma aplicação desktop desenvolvida como parte da disciplina de Bootcamp II, com foco em boas práticas de desenvolvimento, testes automatizados e integração contínua.
 
 A aplicação resolve um problema real e silencioso: pacientes com dores crônicas (enxaqueca, fibromialgia, artrite) chegam às consultas médicas sem conseguir descrever seu histórico de forma organizada. O médico trabalha no escuro, o diagnóstico demora e o tratamento sofre.
 
