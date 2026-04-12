@@ -1,12 +1,26 @@
+
+
 # RastreaDor
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-concluído-green" alt="Status">
+  <img src="https://img.shields.io/badge/versão-1.0.0-blue" alt="Versão">
   <img src="https://img.shields.io/badge/licença-MIT-blue" alt="Licença">
-  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/java-17-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/maven-3.9+-C71A36?style=flat-square&logo=apache-maven&logoColor=white" alt="Maven">
   <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
-  <img src="https://img.shields.io/github/actions/workflow/status/Heitor923/RastreaDor/ci.yml?label=CI&style=flat-square" alt="CI">
+  <img src="https://img.shields.io/github/last-commit/Heitor923/RastreaDor?style=flat-square" alt="Último commit">
+  <img src="https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square&logo=github-actions&logoColor=white" alt="CI">
+  <img src="https://img.shields.io/badge/testes-6%20passando-brightgreen?style=flat-square&logo=junit5&logoColor=white" alt="Testes">
 </p>
+
+---
+
+## 🔗 Repositório
+
+https://github.com/Heitor923/RastreaDor
+
+---
 
 ## 📌 Sobre o Projeto
 
@@ -16,12 +30,35 @@ A aplicação resolve um problema real e silencioso: pacientes com dores crônic
 
 O **RastreaDor** permite registrar episódios de dor com data, localização, intensidade e gatilho suspeito, gerando um resumo do período para apresentar ao médico na consulta.
 
-## Visuais
+---
+
+## 👥 Público-Alvo
+
+- Pacientes com dores crônicas (enxaqueca, fibromialgia, artrite)
+- Pessoas que desejam monitorar sintomas de forma organizada
+- Profissionais de saúde que precisam de dados mais claros para diagnóstico
+
+---
+
+## 🎬 Visuais
 
 <p align="center">
   <img src="https://i.imgur.com/wIZCdJH.gif" alt="Demo do RastreaDor" width="700">
 </p>
 
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- Java 17
+- Swing (Interface gráfica)
+- SQLite (Banco de dados local)
+- Maven (Gerenciamento de dependências)
+- JUnit 5 (Testes automatizados)
+- Checkstyle (Padronização de código)
+- GitHub Actions (CI/CD)
+
+---
 
 ## Instalação
 
