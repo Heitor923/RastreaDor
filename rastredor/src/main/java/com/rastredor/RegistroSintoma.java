@@ -1,19 +1,24 @@
-package main.java.com.rastredor;
+package com.rastredor;
 
 import java.time.LocalDate;
 
 public class RegistroSintoma {
-
+    private int id;
     private LocalDate data;
     private String localizacao;
     private int intensidade;
     private String gatilho;
 
-    public RegistroSintoma(LocalDate data, String localizacao, int intensidade, String gatilho) {
+    public RegistroSintoma(int id, LocalDate data, String localizacao, int intensidade, String gatilho) {
+        this.id = id;
         this.data = data;
         this.localizacao = localizacao;
         this.intensidade = intensidade;
         this.gatilho = gatilho;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public LocalDate getData() {
