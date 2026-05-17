@@ -4,14 +4,14 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-concluído-green" alt="Status">
-  <img src="https://img.shields.io/badge/versão-1.0.0-blue" alt="Versão">
+  <img src="https://img.shields.io/badge/versão-1.1.0-blue" alt="Versão">
   <img src="https://img.shields.io/badge/licença-MIT-blue" alt="Licença">
   <img src="https://img.shields.io/badge/java-17-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
   <img src="https://img.shields.io/badge/maven-3.9+-C71A36?style=flat-square&logo=apache-maven&logoColor=white" alt="Maven">
   <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
   <img src="https://img.shields.io/github/last-commit/Heitor923/RastreaDor?style=flat-square" alt="Último commit">
   <img src="https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square&logo=github-actions&logoColor=white" alt="CI">
-  <img src="https://img.shields.io/badge/testes-6%20passando-brightgreen?style=flat-square&logo=junit5&logoColor=white" alt="Testes">
+  <img src="https://img.shields.io/badge/testes-7%20passando-brightgreen?style=flat-square&logo=junit5&logoColor=white" alt="Testes">
 </p>
 
 ---
@@ -29,6 +29,20 @@ O **RastreaDor** é uma aplicação desktop desenvolvida como parte da disciplin
 A aplicação resolve um problema real e silencioso: pacientes com dores crônicas (enxaqueca, fibromialgia, artrite) chegam às consultas médicas sem conseguir descrever seu histórico de forma organizada. O médico trabalha no escuro, o diagnóstico demora e o tratamento sofre.
 
 O **RastreaDor** permite registrar episódios de dor com data, localização, intensidade e gatilho suspeito, gerando um resumo do período para apresentar ao médico na consulta.
+
+---
+
+## 🌦️ Integração com API Pública
+
+Na Entrega Intermediária, o RastreaDor passou a consumir a API pública Open-Meteo.
+
+A aplicação agora consulta a temperatura atual por meio de requisições HTTP utilizando OkHttp e exibe as informações diretamente na interface gráfica.
+
+Essa funcionalidade ajuda a relacionar possíveis fatores climáticos aos episódios registrados.
+
+API utilizada:
+
+https://open-meteo.com
 
 ---
 
@@ -57,6 +71,9 @@ O **RastreaDor** permite registrar episódios de dor com data, localização, in
 - JUnit 5 (Testes automatizados)
 - Checkstyle (Padronização de código)
 - GitHub Actions (CI/CD)
+- Open-Meteo API (API pública de clima)
+- OkHttp (Cliente HTTP)
+- JSON.org (Leitura de JSON)
 
 ---
 
@@ -77,13 +94,15 @@ mvn install -DskipTests
 Para executar a aplicação:
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.rastredor.Main"
+mvn exec:java "-Dexec.mainClass=com.rastredor.Main"
 ```
 
 A interface gráfica será aberta com as opções:
+
 - Registrar episódio de dor
 - Ver histórico
 - Gerar resumo do período
+- Ver clima atual
 
 ---
 
@@ -117,6 +136,8 @@ Para dúvidas ou sugestões, utilize a aba de **Issues** deste repositório.
 - [x] Testes automatizados com JUnit 5
 - [x] Análise estática com Checkstyle
 - [x] Pipeline de CI com GitHub Actions
+- [x] Integração com API pública de clima
+- [x] Teste de integração da API
 - [ ] Exportar resumo em PDF para levar ao médico
 - [ ] Adicionar gráfico de evolução da dor por período
 
@@ -145,4 +166,4 @@ Este projeto está sob a licença [MIT](https://choosealicense.com/licenses/mit/
 
 ## Status do projeto
 
-**Concluído** — Versão 1.0.0 entregue com interface gráfica, banco de dados, testes e CI funcionando.
+**Concluído** — Versão 1.1.0 entregue com interface gráfica, banco de dados, integração com API pública de clima, testes automatizados e CI funcionando.
