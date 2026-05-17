@@ -1,4 +1,5 @@
-main\java\com\rastredor\RegistroSintoma.class
-main\java\com\rastredor\Main.class
-main\java\com\rastredor\RegistroSintomaService.class
-main\java\com\rastredor\Database.class
+com\rastredor\ClimaService.class
+com\rastredor\RegistroSintomaService.class
+com\rastredor\Main.class
+com\rastredor\Database.class
+com\rastredor\RegistroSintoma.class
