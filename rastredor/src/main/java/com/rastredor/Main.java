@@ -14,11 +14,27 @@ import javax.swing.SwingUtilities;
 
 public class Main extends JFrame {
 
+    private void verClimaAtual() {
+        try {
+            ClimaService climaService = new ClimaService();
+            String temperatura = climaService.buscarTemperaturaAtual();
+
+            JOptionPane.showMessageDialog(this,
+                    "Temperatura atual: " + temperatura,
+                    "Clima Atual",
+                    JOptionPane.INFORMATION_MESSAGE);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,
+                    "Erro ao buscar clima: " + e.getMessage());
+        }
+    }
+
     private final RegistroSintomaService service = new RegistroSintomaService();
 
     public Main() {
         setTitle("RastreaDor");
-        setSize(350, 300);
+        setSize(350, 350);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -50,8 +66,13 @@ public class Main extends JFrame {
         btnResumo.addActionListener(e -> gerarResumo());
         panel.add(btnResumo);
 
+        JButton btnClima = new JButton("Ver Clima Atual");
+        btnClima.setBounds(75, 225, 200, 35);
+        btnClima.addActionListener(e -> verClimaAtual());
+        panel.add(btnClima);
+
         JButton btnSair = new JButton("Sair");
-        btnSair.setBounds(75, 225, 200, 35);
+        btnSair.setBounds(75, 270, 200, 35);
         btnSair.addActionListener(e -> System.exit(0));
         panel.add(btnSair);
 
